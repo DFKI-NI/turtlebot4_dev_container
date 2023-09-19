@@ -117,6 +117,18 @@ ENV NVIDIA_VISIBLE_DEVICES all
 ENV NVIDIA_DRIVER_CAPABILITIES graphics,utility,compute
 ENV QT_X11_NO_MITSHM 1
 
+FROM gazebo-nvidia AS turtlebot4
+
+# install turtlebot packages
+RUN apt-get update && apt-get install -qq -y --no-install-recommends \
+    ros-humble-turtlebot4-bringup \
+    ros-humble-turtlebot4-description \
+    ros-humble-turtlebot4-msgs \
+    ros-humble-turtlebot4-navigation \
+    ros-humble-turtlebot4-node \
+    ros-humble-turtlebot4-simulator \
+    && rm -rf /var/lib/apt/lists/*
+
 ARG WORKSPACE
 
 RUN echo "if [ -f ${WORKSPACE}/install/setup.bash ]; then source ${WORKSPACE}/install/setup.bash; fi" >> /home/${USERNAME}/.bashrc
