@@ -65,7 +65,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # initialize rosdep database 
 RUN rosdep init || echo "rosdep already initialized"
 
-ARG USERNAME=ros
+ARG USERNAME=ros2-dev
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
 
@@ -119,4 +119,4 @@ ENV QT_X11_NO_MITSHM 1
 
 ARG WORKSPACE
 
-RUN echo "if [ -f ${WORKSPACE}/install/setup.bash ]; then source ${WORKSPACE}/install/setup.bash; fi" >> /home/ros/.bashrc
+RUN echo "if [ -f ${WORKSPACE}/install/setup.bash ]; then source ${WORKSPACE}/install/setup.bash; fi" >> /home/${USERNAME}/.bashrc
