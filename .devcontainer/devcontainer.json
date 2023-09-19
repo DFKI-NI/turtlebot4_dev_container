@@ -42,8 +42,11 @@
 				"streetsidesoftware.code-spell-checker",
 				"twxs.cmake",
 				"yzhang.markdown-all-in-one",
-				"zachflower.uncrustify"
+				"zachflower.uncrustify",
+				"mhutchie.git-graph",
+				"GitHub.vscode-pull-request-github",
+				"DavidAnson.vscode-markdownlint"
 			]
 		}
-	}
+	},
 }
