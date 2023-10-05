@@ -23,9 +23,13 @@ RUN apt-get update && apt-get -y upgrade \
 RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
     gnupg2 \
+    iproute2 \
+    iputils-ping \
     lsb-release \
-    sudo \
+    nmap \
+    net-tools \
     software-properties-common \
+    sudo \
     wget \
     && rm -rf /var/lib/apt/lists/*
 
