@@ -15,7 +15,8 @@
 		"--volume=/tmp/.X11-unix:/tmp/.X11-unix",
 		"--volume=/mnt/wslg:/mnt/wslg",
 		"--ipc=host",
-		"--gpus=all"
+		"--gpus=all",
+		"--cap-add=NET_ADMIN"
 		// uncomment to use intel iGPU
 		// "--device=/dev/dri"
 	],
