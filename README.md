@@ -24,6 +24,11 @@ This repository is based on public template from Allison Thackston for a [generi
 3. If you have a Nvidia GPU, install the [NVIDIA Container Toolkit](https://github.com/NVIDIA/nvidia-container-toolkit) to get GPU acceleration inside the container. Instructions can be found [here](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#setting-up-nvidia-container-toolkit).
 4. Open VS Code press `F1` and use `Dev Containers: Open Folder in Container`. Or use the pop up in the lower right corner.
 
+## Note
+
+- The Docker image is quite larage (around 7.5GB), keep that in mind when deleting, downloading or rebuilding the image.
+- **The Container has evelated privileges for performing networking administration**. This gives the container control over the hosts network stack.
+
 ## TODOs
 
 - [ ] Provide setup scripts for the discovery server setup.
