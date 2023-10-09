@@ -33,4 +33,3 @@ This repository is based on public template from Allison Thackston for a [generi
 
 - [ ] Provide setup scripts for the discovery server setup.
 - [ ] Does WSL work?
-- [ ] Build docker image in CI and publish to container registry

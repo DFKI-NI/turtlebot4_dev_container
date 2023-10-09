@@ -1,11 +1,6 @@
 // See https://aka.ms/vscode-remote/devcontainer.json for format details.
 {
-	"dockerFile": "Dockerfile",
-	"build": {
-		"args": {
-			"WORKSPACE": "${containerWorkspaceFolder}"
-		}
-	},
+	"image": "ghcr.io/dfki-ni/turtlebot4_dev_container:latest",
 	"remoteUser": "ros2-dev",
 	"runArgs": [
 		"--network=host",
@@ -49,5 +44,5 @@
 				"DavidAnson.vscode-markdownlint"
 			]
 		}
-	},
+	}
 }
