@@ -11,7 +11,7 @@ This repository contains a setup that uses a Docker container as an isolated env
   - ROS 2 approved formatters
   - Pre-defined tasks
   - Debugging setup
-- Basic continues integration setup
+- Basic continuous integration (CI) setup
 
 ## Credits
 
