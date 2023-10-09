@@ -29,6 +29,16 @@ This repository is based on public template from Allison Thackston for a [generi
 - The Docker image is quite larage (around 7.5GB), keep that in mind when deleting, downloading or rebuilding the image.
 - **The Container has evelated privileges for performing networking administration**. This gives the container control over the hosts network stack.
 
+## Versioning
+
+The Docker image with the `latest` tag is rebuilt weekly, to frequently incoperate updates. This may cause instabilities. For a stable version, choose an image based on a release and update it in `devcontainer.json`:
+
+```json
+{
+"image": "ghcr.io/dfki-ni/turtlebot4_dev_container:[tag]",
+}
+```
+
 ## TODOs
 
 - [ ] Provide setup scripts for the discovery server setup.
